@@ -1,0 +1,28 @@
+{
+  "name": "BaseClass",
+  "version": "0.0.1",
+  "description": "A modularization of Backbone.js's extend() function for use with JS classes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": "",
+  "dependencies": {
+    "underscore": "~1.4.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.6.0",
+    "expect": "~0.0.2"
+  },
+  "keywords": [
+    "base",
+    "class",
+    "extend"
+  ],
+  "author": "Alexander Early <alexander.early@gmail.com>",
+  "contibutors": [
+      "Jeremy Ashkenas <jeremy@documentcloud.org>",
+      "Bermi Ferrer <bermi@bermilabs.com>"
+  ],
+  "license": "BSD"
+}
