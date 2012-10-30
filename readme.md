@@ -1,4 +1,4 @@
-###baseclass
+#baseclass
 
 > For when you just wan't Backbone's Class.extend() function.
 
