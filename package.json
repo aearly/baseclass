@@ -1,5 +1,5 @@
 {
-  "name": "BaseClass",
+  "name": "baseclass",
   "version": "0.0.1",
   "description": "A modularization of Backbone.js's extend() function for use with JS classes.",
   "main": "index.js",
