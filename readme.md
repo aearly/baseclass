@@ -15,6 +15,6 @@ Very similar to uberclass and class.js -- the main difference is that the proto 
         someMethod: function () { ... }
     });
 
-##TODO
+##Licence
 
-* Write tests, like a respectable software engineer
+MIT
