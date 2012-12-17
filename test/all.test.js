@@ -57,10 +57,15 @@ describe("Baseclass Tests", function () {
 	it("should copy static props properly", function () {
 		Tritium = Hydrogen.extend({
 			mass: 3
-		},{
+		}, {
 			halfLife: 12.32
 		});
 
 		expect(Tritium.halfLife).to.equal(12.32);
+	});
+
+	it("should provide __super__ as a convenience", function () {
+		var t = new Tritium();
+		expect(Tritium.__super__.mass).to.equal(1);
 	});
 });
