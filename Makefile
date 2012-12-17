@@ -6,6 +6,6 @@ coverage:
 
 
 cov-instrument:
-	jscoverage --no-highlight lib/ lib-cov/
+	jscoverage lib/ lib-cov/
 
 .PHONY: test coverage cov-instrument
