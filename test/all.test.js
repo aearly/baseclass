@@ -1,5 +1,5 @@
 var expect = require("expect.js"),
-	BaseClass = require("../lib/baseclass"),
+	BaseClass = process.env.COVERAGE ? require("../lib-cov/baseclass") : require("../lib/baseclass"),
 	Element,
 	Hydrogen,
 	Tritium,
