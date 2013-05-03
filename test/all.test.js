@@ -11,13 +11,16 @@ describe("Baseclass Tests", function () {
 			mass: 0,
 			oxidize: function () {
 				return "Some reaction might happen";
+			},
+			initialize: function () {
+				this.initialized = true;
 			}
 		});
 
 		var e = new Element();
 		expect(e.mass).to.equal(0);
 		expect(e.oxidize()).to.equal("Some reaction might happen");
-
+		expect(e.initialized).to.equal(true);
 
 	});
 
@@ -50,6 +53,8 @@ describe("Baseclass Tests", function () {
 		expect(t.oxidize()).to.equal("You get water and a lot of heat");
 		expect(he.mass).to.equal(4);
 		expect(he.oxidize()).to.equal("You get no response.");
+		expect(h.initialized).to.equal(true);
+		expect(he.initialized).to.equal(true);
 
 
 	});
