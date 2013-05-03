@@ -40,6 +40,9 @@ describe("Baseclass Tests", function () {
 			mass: 4,
 			oxidize: function () {
 				return "You get no response.";
+			},
+			initialize: function () {
+				this.heliumInit = true;
 			}
 		});
 
@@ -54,7 +57,8 @@ describe("Baseclass Tests", function () {
 		expect(he.mass).to.equal(4);
 		expect(he.oxidize()).to.equal("You get no response.");
 		expect(h.initialized).to.equal(true);
-		expect(he.initialized).to.equal(true);
+		expect(he.initialized).to.equal(undefined);
+		expect(he.heliumInit).to.equal(true);
 
 
 	});
