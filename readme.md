@@ -15,10 +15,14 @@ var BaseClass = require("baseclass");
 
 var MyClass = BaseClass.extend({
     someProp: 'My property value',
-    someMethod: function () { ... }
+    someMethod: function () { ... },
+    initialize: function (arg1, arg2) { ... }
 },{
     optionalStaticProp = "MyClass.optionalStaticProp"
 });
+
+var inst = new MyClass(arg1, arg2);
+
 ```
 
 ##Licence
