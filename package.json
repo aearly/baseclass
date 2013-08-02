@@ -13,6 +13,7 @@
     "mocha": "~1.6.0",
     "expect.js": "~0.2.0"
   },
+  "browser": "./lib/baseclass.js",
   "keywords": [
     "base",
     "class",
