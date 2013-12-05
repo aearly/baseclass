@@ -1,6 +1,6 @@
 #baseclass
 
-> For when you just wan't Backbone's Class.extend() function.
+> For when you just want Backbone's Class.extend() function.
 
 [![Build Status](https://travis-ci.org/aearly/baseclass.png)](https://travis-ci.org/aearly/baseclass)
 
@@ -16,7 +16,7 @@ var BaseClass = require("baseclass");
 var MyClass = BaseClass.extend({
     someProp: 'My property value',
     someMethod: function () { ... },
-    initialize: function (arg1, arg2) { ... }
+    constructor: function (arg1, arg2) { ... }
 },{
     optionalStaticProp = "MyClass.optionalStaticProp"
 });

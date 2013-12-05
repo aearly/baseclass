@@ -12,7 +12,7 @@ describe("Baseclass Tests", function () {
 			oxidize: function () {
 				return "Some reaction might happen";
 			},
-			initialize: function () {
+			constructor: function () {
 				this.initialized = true;
 			}
 		});
@@ -41,8 +41,11 @@ describe("Baseclass Tests", function () {
 			oxidize: function () {
 				return "You get no response.";
 			},
-			initialize: function () {
+			constructor: function () {
 				this.heliumInit = true;
+			},
+			initialize: function () {
+				this.secondaryInit = true;
 			}
 		});
 
@@ -59,6 +62,7 @@ describe("Baseclass Tests", function () {
 		expect(h.initialized).to.equal(true);
 		expect(he.initialized).to.equal(undefined);
 		expect(he.heliumInit).to.equal(true);
+		expect(this.secondaryInit).to.equal(undefined);
 
 
 	});
