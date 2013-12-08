@@ -1,6 +1,6 @@
 {
   "name": "baseclass",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "A modularization of Backbone.js's extend() function for use with JS classes.",
   "main": "lib/baseclass.js",
   "scripts": {
